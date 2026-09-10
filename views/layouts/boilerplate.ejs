@@ -11,10 +11,18 @@
      crossorigin="anonymous"
      />
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link href="/css/rating.css" rel="stylesheet"/>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+
+    </head>
 <body>
     <%- include("../includes/navbar.ejs") %>
-    <div class="container"><%- body %></div>
+    <div class="container">
+        <%- include("../includes/flash.ejs") %>
+
+        <%- body %>
+    </div>
 
     <%- include("../includes/footer.ejs") %>
 
